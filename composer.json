@@ -1,0 +1,17 @@
+{
+    "name": "artnum/monoref",
+    "authors": [{
+        "name": "Etienne Bagnoud",
+        "email": "etienne@artisan-numerique.ch",
+        "role": "Developer"
+    }],
+    "license": "MIT",
+    "description": "Monotonic reference implementation for PHP using Memcached", 
+    "type": "library", 
+    "require": { "php": ">=8.2"}, 
+    "autoload": { 
+        "psr-4": { 
+            "MonoRef\\": "src/"
+        }
+    } 
+}
