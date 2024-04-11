@@ -18,4 +18,8 @@ class Redis implements IStorage {
     public function increment(string $key, int $step = 1): int {
         return $this->server->incrBy($key, $step);
     }
+
+    public function get(string $key): int {
+        return (int) $this->server->get($key);
+    }
 }

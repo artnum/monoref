@@ -20,4 +20,8 @@ class Memcached implements IStorage {
     public function increment(string $key, int $step = 1): int {
         return $this->server->increment($key, $step, 0);
     }
+
+    public function get(string $key): int {
+        return (int) $this->server->get($key);
+    }
 }
